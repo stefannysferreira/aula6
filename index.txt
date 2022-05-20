@@ -1,0 +1,45 @@
+while i<itensQuantidade:
+    nomeItem=input("Nome do produto {}: ".format(i+1) )
+    quantosDesse=float(input("Quantidade deste produto: "))
+    valorUnitario=float(input("Valor unitário deste produto: "))
+
+    item={
+    "nomeItem":nomeItem,
+    "quantosDesse":quantosDesse,
+    "valorUnitario":valorUnitario
+    }
+    while i<itensQuantidade:
+    nomeItem=input("Nome do produto {}: ".format(i+1) )
+    quantosDesse=float(input("Quantidade deste produto: "))
+    valorUnitario=float(input("Valor unitário deste produto: "))
+
+    item={
+    "nomeItem":nomeItem,
+    "quantosDesse":quantosDesse,
+    "valorUnitario":valorUnitario
+    }
+
+    itens.append(item)
+    i+=1
+
+total=0
+print("==========================")
+print("Recibo")
+print("Quantidade   |   Nome  | Valor")
+for item in itens:
+    print("{}  |   {}   |  R${}".format(item["quantosDesse"],item["nomeItem"],item["valorUnitario"]))
+    total+=item["valorUnitario"] * item["quantosDesse"]
+print("Total: R$"+str(total))
+print("======================")
+    itens.append(item)
+    i+=1
+
+total=0
+print("==========================")
+print("Recibo")
+print("Quantidade   |   Nome  | Valor")
+for item in itens:
+    print("{}  |   {}   |  R${}".format(item["quantosDesse"],item["nomeItem"],item["valorUnitario"]))
+    total+=item["valorUnitario"] * item["quantosDesse"]
+print("Total: R$"+str(total))
+print("======================")
